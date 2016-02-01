@@ -1,0 +1,32 @@
+header div {
+  float: left;
+}
+
+header .hero-image {
+  cursor: pointer;
+  display: inline;
+  padding: 0;
+  margin: 0;
+}
+
+/*.hero-image {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  width: 75px;
+  margin: 0 5px 5px 0;
+}*/
+
+header .hero-image .draft-image {
+  background: rgba(0, 0, 0, 0.8);
+  width: 75px;
+  height: 100px;
+  margin: 0 5px 5px 0;
+  padding: 0;
+}
+
+.team-radient {
+  margin-right: 80px;
+}

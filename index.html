@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      Dota2 Draft Assistant
+    </title>
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <link href="/styles/base.css" rel="stylesheet">
+    <link href="/styles/draft_picks.css" rel="stylesheet">
+    <link href="/styles/main.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="content">
+      <header class="draft-picks">
+        <h1>Hero Draft</h1>
+        <div class="team-radient">
+          <h2>Team Radient</h2>
+        </div>
+        <div class="team-dire">
+          <h2>Team Dire</h2>
+        </div>
+      </header>
+      <main>
+        <h1>Hero List</h1>
+        <h2>Strength</h2>
+        <section class="strength"></section>
+        <h2>Agility</h2>
+        <section class="agility"></section>
+        <h2>Intelligence</h2>
+        <section class="intelligence"></section>
+      </main>
+    </div>
+
+    <!-- SCRIPTS -->
+    <!-- VENDOR -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+    <script src="/vendor/page.js" type="text/javascript"></script>
+    <!-- MODEL -->
+    <script src="/scripts/heroes_list.js" type="text/javascript"></script>
+    <script src="/scripts/utils.js" type="text/javascript"></script>
+    <script src="/scripts/draft.js" type="text/javascript"></script>
+    <script src="/scripts/heroes.js" type="text/javascript"></script>
+    <!-- VIEW -->
+    <script src="/scripts/pageView.js" type="text/javascript"></script>
+    <!-- CONTROL -->
+    <script src="/scripts/pageController.js" type="text/javascript"></script>
+    <script src="/scripts/router.js" type="text/javascript"></script>
+
+  </body>
