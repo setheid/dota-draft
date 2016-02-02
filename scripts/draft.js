@@ -28,3 +28,28 @@ draft.default = function(ctx, next) {
   );
   next();
 };
+
+draft.chooseSlot = function() {
+  $('.draft-picks').on('click', '.draft-image', function() {
+    $('.select').css('box-shadow', 'none').not(this).removeClass('select');
+    $(this).toggleClass('select');
+    if ($(this).parents().hasClass('team-radient')) {
+      $('.select').css('box-shadow', 'inset 0 0 20px #61FF61');
+    } else {
+      $('.select').css('box-shadow', 'inset 0 0 20px #FC4343');
+    }
+  });
+};
+
+draft.selectHero = function() {
+  $('main').on('click', '.hero-image div', function() {
+    console.log(this.dataset.hero);
+    $('.select').css('background-image', 'url(http://cdn.dota2.com/apps/dota2/images/heroes/' + this.dataset.hero + '_vert.jpg)');
+    $('.select p').empty();
+  });
+};
+
+$(function() {
+  draft.chooseSlot();
+  draft.selectHero();
+});

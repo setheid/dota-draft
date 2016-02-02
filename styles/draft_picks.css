@@ -4,29 +4,36 @@ header div {
 
 header .hero-image {
   cursor: pointer;
-  display: inline;
-  padding: 0;
-  margin: 0;
-}
-
-/*.hero-image {
-  cursor: pointer;
   display: block;
+  padding: 0;
   position: relative;
   float: left;
   overflow: hidden;
   width: 75px;
-  margin: 0 5px 5px 0;
-}*/
-
-header .hero-image .draft-image {
-  background: rgba(0, 0, 0, 0.8);
-  width: 75px;
   height: 100px;
   margin: 0 5px 5px 0;
-  padding: 0;
+}
+
+header .hero-image div {
+  background: rgba(0, 0, 0, 0.8);
+  height: 100px;
+  width: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /*margin: 0 5px 5px 0;
+  padding: 0;*/
+}
+
+.draft-image p {
+  color: #B0B0B0;
+  text-align: center;
 }
 
 .team-radient {
   margin-right: 80px;
 }
+
+/*.select-radient {
+  box-shadow: inset 0 0 20px #61FF61;
+}*/

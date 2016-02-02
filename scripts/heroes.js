@@ -1,6 +1,4 @@
-heroes.image = function(hero) {
-  return 'http://cdn.dota2.com/apps/dota2/images/heroes/' + hero['name'] + '_vert.jpg';
-};
+
 
 heroes.sortArray = function(array) {
   var compare = function(a,b) {
@@ -12,4 +10,8 @@ heroes.sortArray = function(array) {
       return 0;
   };
   array.sort(compare);
+};
+
+heroes.image = function(hero) {
+  return 'http://cdn.dota2.com/apps/dota2/images/heroes/' + hero['name'] + '_vert.jpg';
 };
