@@ -1,11 +1,11 @@
 var draft = {};
 
 draft.pickNums = [
-  {draftpick: 'draft-pick1'},
-  {draftpick: 'draft-pick2'},
-  {draftpick: 'draft-pick3'},
-  {draftpick: 'draft-pick4'},
-  {draftpick: 'draft-pick5'}
+  {draftpick: 'pick1', image: '/images/clicktoselect.jpg'},
+  {draftpick: 'pick2', image: '/images/clicktoselect.jpg'},
+  {draftpick: 'pick3', image: '/images/clicktoselect.jpg'},
+  {draftpick: 'pick4', image: '/images/clicktoselect.jpg'},
+  {draftpick: 'pick5', image: '/images/clicktoselect.jpg'}
 ];
 
 draft.getTemplate = function(ctx, next) {
@@ -45,7 +45,6 @@ draft.selectHero = function() {
   $('main').on('click', '.hero-image div', function() {
     console.log(this.dataset.hero);
     $('.select').css('background-image', 'url(http://cdn.dota2.com/apps/dota2/images/heroes/' + this.dataset.hero + '_vert.jpg)');
-    $('.select p').empty();
   });
 };
 

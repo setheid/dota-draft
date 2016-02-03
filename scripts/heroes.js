@@ -1,4 +1,6 @@
-
+heroes.strength = [];
+heroes.agility = [];
+heroes.intelligence = [];
 
 heroes.sortArray = function(array) {
   var compare = function(a,b) {

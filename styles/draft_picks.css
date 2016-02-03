@@ -17,7 +17,7 @@ header .hero-image {
 header .hero-image div {
   background: rgba(0, 0, 0, 0.8);
   height: 100px;
-  width: auto;
+  width: 75px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
