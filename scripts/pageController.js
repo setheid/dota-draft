@@ -1,6 +1,8 @@
-heroes.renderAll = function() {
-  heroes.sortArray(heroes.list);
-  heroes.renderHeroes(heroes.list);
+draft.getTemplate = function(ctx, next) {
+  $.get('/templates/hero_draft.html', function(data, message, xhr) {
+    draft.template = Handlebars.compile(data);
+    next();
+  });
 };
 
 heroes.getTemplate = function(ctx, next) {

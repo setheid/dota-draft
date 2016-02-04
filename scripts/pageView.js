@@ -1,5 +1,15 @@
-heroes.renderSingle = function(hero) {
-  return heroes.template(hero);
+draft.renderDefault = function(ctx, next) {
+  $('header div').append(
+    draft.pickNums.map(function(ele) {
+      return draft.loadSingle(ele);
+    })
+  );
+  next();
+};
+
+heroes.renderMain = function() {
+  heroes.sortArray(heroes.list);
+  heroes.renderHeroes(heroes.list);
 };
 
 heroes.renderHeroes = function(heroesList) {
@@ -8,7 +18,7 @@ heroes.renderHeroes = function(heroesList) {
     hero.image = heroes.image(hero);
     heroes[hero.hero_class].push(hero);
     $('.' + hero.hero_class).append(
-      heroes.renderSingle(hero)
+      heroes.loadSingle(hero)
     );
   });
 };
