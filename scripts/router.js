@@ -1,8 +1,13 @@
 page('/',
   draft.getTemplate,
-  draft.default,
+  draft.renderDefault,
   heroes.getTemplate,
-  heroes.renderAll
+  heroes.renderMain
 );
 
 page.start();
+
+$(function() {
+  draft.chooseSlot();
+  selection.selectHero();
+});
