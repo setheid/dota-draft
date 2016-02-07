@@ -27,7 +27,7 @@ section .hero-image div {
 }
 
 section .hero-image figcaption {
-  cursor: default;
+  z-index: 1;
   text-align: center;
   font-size: 12px;
   width: 75px;
@@ -52,6 +52,8 @@ section .hero-image:hover figcaption {
 }
 
 .grayed-out div {
+  z-index: 5;
+  position: relative;
   width: 100%;
   height: 100%;
   background-color: rgba(69, 69, 69, 0.75);

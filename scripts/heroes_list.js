@@ -11,7 +11,10 @@ heroes.list = [
     name: 'axe',
     id: 2,
     localized_name: 'Axe',
-    hero_class: 'strength'
+    hero_class: 'strength',
+    synergies: ['omniknight', 'skywrath_mage', ],
+    strong_against: ['dazzle', 'huskar', 'furion', 'juggernaut', 'enigma', 'naga_siren', 'life_stealer'],
+    weak_against: ['viper', 'venomancer', 'obsidian_destroyer', 'necrolyte', 'shredder', 'skywrath_mage']
   },
   {
     name: 'bane',
