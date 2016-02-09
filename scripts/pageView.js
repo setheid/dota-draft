@@ -7,13 +7,7 @@ draft.renderDefault = function(ctx, next) {
   next();
 };
 
-heroes.renderMain = function() {
-  heroes.sortArray(heroes.list);
-  heroes.renderHeroes(heroes.list);
-};
-
 heroes.renderHeroes = function(heroesList) {
-  $('section').empty();
   heroesList.forEach(function(hero) {
     hero.image = heroes.image(hero);
     heroes[hero.hero_class].push(hero);
@@ -21,4 +15,10 @@ heroes.renderHeroes = function(heroesList) {
       heroes.loadSingle(hero)
     );
   });
+};
+
+heroes.renderMain = function(ctx, next) {
+  heroes.sortArray(heroes.list);
+  heroes.renderHeroes(heroes.list);
+  next();
 };
