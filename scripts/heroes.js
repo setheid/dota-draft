@@ -2,6 +2,17 @@ heroes.strength = [];
 heroes.agility = [];
 heroes.intelligence = [];
 
+heroes.getTemplate = function(ctx, next) {
+  $.get('/templates/hero_image.html', function(data, message, xhr) {
+    heroes.template = Handlebars.compile(data);
+    next();
+  });
+};
+
+heroes.loadSingle = function(hero) {
+  return heroes.template(hero);
+};
+
 heroes.sortArray = function(array) {
   var compare = function(a,b) {
     if (a.localized_name < b.localized_name)
@@ -12,10 +23,6 @@ heroes.sortArray = function(array) {
       return 0;
   };
   array.sort(compare);
-};
-
-heroes.loadSingle = function(hero) {
-  return heroes.template(hero);
 };
 
 heroes.image = function(hero) {
