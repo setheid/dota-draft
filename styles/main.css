@@ -26,8 +26,13 @@ section .hero-image div {
   background-position: center;
 }
 
+section .inner div {
+  width: 100%;
+  height: 100%;
+}
+
 section .hero-image figcaption {
-  z-index: 1;
+  z-index: 5;
   text-align: center;
   font-size: 12px;
   width: 75px;
@@ -52,9 +57,29 @@ section .hero-image:hover figcaption {
 }
 
 .grayed-out div {
-  z-index: 5;
+  z-index: 10;
   position: relative;
   width: 100%;
   height: 100%;
   background-color: rgba(69, 69, 69, 0.75);
+}
+
+.synergy1 div {
+  box-shadow: inset 0 0 10px #02DB1D;
+}
+.synergy3 div {
+  box-shadow: inset 0 0 40px #02DB1D;
+}
+.synergy5 div {
+  box-shadow: inset 0 0 60px #02DB1D;
+}
+
+.counter1 div {
+  background-color: rgba(233,24,14,0.2);
+}
+.counter3 div {
+  background-color: rgba(233,24,14,0.38);
+}
+.counter5 div {
+  background-color: rgba(233,24,14,0.75);
 }
