@@ -23,13 +23,13 @@ draftCounters.highlightHeroes = function(synergyOrCounter) {
 
   allHeroes.each(function() {
     var num = $(this).data(synergyOrCounter);
-    
+
     if (num) {
-      if (num < 3) {
+      if (num === 2) {
         $(this).addClass(synergyOrCounter + '1');
       } else if (num === 3) {
         $(this).addClass(synergyOrCounter + '3');
-      } else {
+      } else if (num > 3) {
         $(this).addClass(synergyOrCounter + '5');
       }
     }

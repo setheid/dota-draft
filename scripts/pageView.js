@@ -18,7 +18,7 @@ heroes.renderHeroes = function(heroesList) {
 };
 
 heroes.renderMain = function(ctx, next) {
-  // heroes.sortArray(heroes.list);
+  heroes.sortArray(heroes.list);
   heroes.renderHeroes(heroes.list);
   next();
 };
