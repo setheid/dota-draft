@@ -1,7 +1,5 @@
 var draftCounters = {};
 
-
-
 draftCounters.findNums = function(synergyOrCounter, teamArray, weakOrSynergy) {
   $('section .hero-image .inner').each(function() {
     var counterPick = this;
@@ -25,11 +23,11 @@ draftCounters.highlightHeroes = function(synergyOrCounter) {
     var num = $(this).data(synergyOrCounter);
 
     if (num) {
-      if (num === 2) {
+      if (num === 1) {
         $(this).addClass(synergyOrCounter + '1');
-      } else if (num === 3) {
+      } else if (num === 2) {
         $(this).addClass(synergyOrCounter + '3');
-      } else if (num > 3) {
+      } else if (num >= 3) {
         $(this).addClass(synergyOrCounter + '5');
       }
     }
