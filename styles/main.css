@@ -61,25 +61,25 @@ section .hero-image:hover figcaption {
   position: relative;
   width: 100%;
   height: 100%;
-  background-color: rgba(69, 69, 69, 0.75);
-}
-
-.synergy1 div {
-  box-shadow: inset 0 0 10px #02DB1D;
-}
-.synergy3 div {
-  box-shadow: inset 0 0 40px #02DB1D;
-}
-.synergy5 div {
-  box-shadow: inset 0 0 60px #02DB1D;
+  background-color: rgba(19, 19, 19, 0.75);
 }
 
 .counter1 div {
-  background-color: rgba(233,24,14,0.2);
+  box-shadow: inset 0 0 15px rgb(233,24,14);
 }
 .counter3 div {
-  background-color: rgba(233,24,14,0.38);
+  box-shadow: inset 0 0 40px rgb(233,24,14);
 }
 .counter5 div {
-  background-color: rgba(233,24,14,0.75);
+  box-shadow: inset 0 0 60px rgb(233,24,14);
+}
+
+.synergy1 div {
+  background-color: rgba(39,255,0,0.2);
+}
+.synergy3 div {
+  background-color: rgba(39,255,0,0.38);
+}
+.synergy5 div {
+  background-color: rgba(39,255,0,0.75);
 }
